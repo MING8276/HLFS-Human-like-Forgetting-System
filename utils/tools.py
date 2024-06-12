@@ -36,6 +36,7 @@ def plot_data(values: list, label=None):
     plt.xlim(left=0)
     plt.ylim(bottom=0)
     plt.grid(True)
+    plt.tight_layout()
     plt.show()
 
 
@@ -56,6 +57,7 @@ def plot_multiple_data(*args, labels=None):
     plt.legend()
     plt.xlim(left=0)
     plt.ylim(bottom=0)
+    plt.tight_layout()
     plt.show()
 
 

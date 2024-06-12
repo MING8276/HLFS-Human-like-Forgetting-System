@@ -15,6 +15,7 @@ if __name__ == '__main__':
     plt.plot(x, 5 * x, label='S = 5 * recallTimes', color='green')
     plt.plot(x, 5 + 12 * np.log(x), label='S = Inx-based', color='red')
     plt.plot(x, ye, label='S = e^x-based', color='purple')
+    plt.tight_layout()
 
     a = -13.5
     b = 37
