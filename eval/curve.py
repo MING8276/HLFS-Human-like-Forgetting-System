@@ -10,7 +10,7 @@ if __name__ == '__main__':
     x = np.linspace(1, 5, 200)
     y = 5 + 20 * np.tanh(0.5 * (x - 1))  # x -> recallTimes
     ye = (5 + 0.35 * np.exp(4)) - 0.35 * np.exp(-x + 5)
-    plt.figure(figsize=(12, 6))
+    plt.figure(figsize=(10, 6))
     plt.plot(x, y, label='S = tanh-based', color='blue')
     plt.plot(x, 5 * x, label='S = 5 * recallTimes', color='green')
     plt.plot(x, 5 + 12 * np.log(x), label='S = Inx-based', color='red')
@@ -28,9 +28,10 @@ if __name__ == '__main__':
 
     plt.title('The curve of S as a function of recallTimes')
     plt.xlabel('recallTimes')
-    plt.ylabel('S')
+    plt.ylabel('S', labelpad=1)
     plt.grid(True)
     plt.legend()
+    plt.savefig('image/Figure 12.png', bbox_inches='tight')
     plt.show()
     # Figure_2
     score_1 = [forgetting_curve(i, 1, drawMode=1) for i in range(0, 24)]
