@@ -37,19 +37,19 @@ if __name__ == '__main__':
     score_1 = [forgetting_curve(i, 1, drawMode=1) for i in range(0, 24)]
     label = 'recallTimes=1'
     tools.plot_data(score_1, label=label)
-    # Figure_3
-    score_1 = [forgetting_curve(i, 1, drawMode=1) for i in range(0, 24)]
-    score_2 = [forgetting_curve(i, 2, drawMode=1) for i in range(0, 24)]
-    score_3 = [forgetting_curve(i, 3, drawMode=1) for i in range(0, 24)]
-    score_4 = [forgetting_curve(i, 4, drawMode=1) for i in range(0, 24)]
-    score_5 = [forgetting_curve(i, 5, drawMode=1) for i in range(0, 24)]
+    # Figure_8
+    score_1 = [forgetting_curve(i, 1, drawMode=1) * 10000 for i in range(0, 24)]
+    score_2 = [forgetting_curve(i, 2, drawMode=1) * 10000 for i in range(0, 24)]
+    score_3 = [forgetting_curve(i, 3, drawMode=1) * 10000 for i in range(0, 24)]
+    score_4 = [forgetting_curve(i, 4, drawMode=1) * 10000 for i in range(0, 24)]
+    score_5 = [forgetting_curve(i, 5, drawMode=1) * 10000 for i in range(0, 24)]
     labels = ['recallTimes=1', 'recallTimes=2', 'recallTimes=3', 'recallTimes=4', 'recallTimes=5']
     tools.plot_multiple_data(score_1, score_2, score_3, score_4, score_5, labels=labels)
-    # Figure_4
-    score_1 = [source_ab_curve(i, 1, drawMode=1) for i in range(0, 24)]
-    score_2 = [source_ab_curve(i, 2, drawMode=1) for i in range(0, 24)]
-    score_3 = [source_ab_curve(i, 3, drawMode=1) for i in range(0, 24)]
-    score_4 = [source_ab_curve(i, 4, drawMode=1) for i in range(0, 24)]
-    score_5 = [source_ab_curve(i, 5, drawMode=1) for i in range(0, 24)]
+    # Figure_9
+    score_1 = [source_ab_curve(i, 1, drawMode=1) * 10000 for i in range(0, 24)]
+    score_2 = [source_ab_curve(i, 2, drawMode=1) * 10000 for i in range(0, 24)]
+    score_3 = [source_ab_curve(i, 3, drawMode=1) * 10000 for i in range(0, 24)]
+    score_4 = [source_ab_curve(i, 4, drawMode=1) * 10000 for i in range(0, 24)]
+    score_5 = [source_ab_curve(i, 5, drawMode=1) * 10000 for i in range(0, 24)]
     labels = ['recallTimes=1', 'recallTimes=2', 'recallTimes=3', 'recallTimes=4', 'recallTimes=5']
     tools.plot_multiple_data(score_1, score_2, score_3, score_4, score_5, labels=labels)

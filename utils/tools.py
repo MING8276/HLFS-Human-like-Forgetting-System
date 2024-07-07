@@ -50,9 +50,9 @@ def plot_multiple_data(*args, labels=None):
     for index, values in enumerate(args):
         x = range(0, len(values))
         plt.plot(x, values, marker='o', label=labels[index], markersize=4)
-    plt.title("Comparative Analysis of Knowledge Retention Curves")
-    plt.xlabel("timeGap")
-    plt.ylabel("R")
+    plt.title("The number of remaining tokens")
+    plt.xlabel("Days")
+    plt.ylabel("Tokens")
     plt.grid(True)
     plt.legend()
     plt.xlim(left=0)

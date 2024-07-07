@@ -48,9 +48,15 @@ def __final_score(score: float, config=config_curve):
 
 
 if __name__ == '__main__':
+    s = []
+    f = []
     for j in range(1, 6):
+        s.append([source_ab_curve(i, j, config_curve, drawMode=1) for i in range(24)])
         print([source_ab_curve(i, j, config_curve, drawMode=1) for i in range(24)])
+
     print('############')
     for j in range(1, 6):
+        f.append([forgetting_curve(i, j, config_curve, drawMode=1) for i in range(24)])
         print([forgetting_curve(i, j, config_curve, drawMode=1) for i in range(24)])
     # print(forgetting_curve(6, 1))
+
