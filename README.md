@@ -1,6 +1,6 @@
 # 🚀HLFS: Enabling Long-term Memory to Forget like human
 
-This is the official repository for the paper "HLFS: Enabling Long-term Memory to Forget like human". 
+This is the official repository for the paper "HLFS: A Framework for Human-Like Forgetting in Long-Term Memory Systems". 
 In this paper, we introduce the **Human-Like Forgetting System (HLFS)**, a comprehensive forgetting system based on a variant of the Ebbinghaus forgetting curve. Building upon this, we have developed the **General Chat Box (GCB)**. The overall architecture of the model is illustrated in the following diagram:
 
 <img src="misc/workflow.png" align="middle" width="95%">
